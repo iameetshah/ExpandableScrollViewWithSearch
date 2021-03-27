@@ -43,7 +43,6 @@ struct SubMenuView: View {
                     subHeader.name.lowercased().contains(searchText.lowercased())
                 }) {
                     VStack(alignment: .leading) {
-                        if filteredSubItems.count > 1 {
                             Divider()
                             HStack {
                                 Text("Select all").font(.system(size: 16)).padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
@@ -56,7 +55,6 @@ struct SubMenuView: View {
                             .onTapGesture {
                                 selectedItem = nil
                                 selectedHeader = header
-                            }
                         }
                         ForEach(filteredSubItems) { subHeader in
                             Divider()
