@@ -16,7 +16,7 @@ struct SearchBar: View {
             TextField("Search in sub header eg.'5' shows header 2 ...", text: $text)
                 .padding(7)
                 .padding(.horizontal, 25)
-                .background(Color(.systemGray6))
+                .background(Color.gray)
                 .cornerRadius(8)
                 .overlay(
                     HStack {
